@@ -1,7 +1,7 @@
 # Specifications
 
 - Hash Rate: 500 MH/s ±10%
-- Power Consumption: 280 W ±10%
+- Power Consumption: 320 W ±10%
 - Number of Shooter chips per unit: 60
 - Operating Temperature: 0 °C to 40 °C
 - Power Supply: ATX 12V required

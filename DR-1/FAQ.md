@@ -3,7 +3,7 @@
 
 ### Is power supply included in the package?
 
-No. A power supply unit is not included, and you will need to provide an ATX PSU. There are 2 PCI-e connectors for +12V DC input and only one of them is required. You can use either PCI-e 6 Pin or 8 Pin. A 500 walts PSU would be good enough for powering our miners up.
+No. A power supply unit is not included, and you will need to provide an ATX PSU. There are 2 PCI-e connectors for +12V DC input and both of them is required. You can use either PCI-e 6 Pin or 8 Pin. A 500 walts PSU would be good enough for powering our miners up.
 
 ### Is the Rasperry Pi required for running? 
 
