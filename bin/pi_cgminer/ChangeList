@@ -1,0 +1,6 @@
+2016-04-28
+1. Add chip status show.( [ 111111 111111 111111 110111 111111 111111 111010 011111 111111 111101 ] if show 1 menas chip work )
+
+2016-05-04
+1. Add serial read buffer.
+2. Add option --drl-asic-status.
