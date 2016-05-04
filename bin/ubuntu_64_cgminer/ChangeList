@@ -3,4 +3,4 @@
 
 2016-05-04
 1. Add serial read buffer.
-2. Add option --drl-asic-status.
+2. Add option --dr1-asic-status.
