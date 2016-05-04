@@ -36,7 +36,7 @@
 cgminer.exe --x11 -o "stratum+tcp://url:port" -u xxxx -p x --dr1-clk 400 --dr1-fan LV5 -S //./COM5
 ```
 
-### Linux Ubuntu Usage
+### Linux (Ubuntu) Usage
 
 ```sh
 ./cgminer --x11 -o "stratum+tcp://url:port" -u xxx -p x --dr1-clk 400 --dr1-fan LV5 -S /dev/ttyUSB0
@@ -59,8 +59,8 @@ Usage:
 ### SHA-1 Checksum
 
 ```
-2669d2eb9251ed5c3bb8227e1e59c68834a10092  release/cgminer-dr1-pi.zip
-b678f2c01ce35a387288bdec4b128cd1d833c5ab  release/cgminer-dr1-ubuntu32.zip
-b72e7a107790fbd6458fa3af7a667bbaa23d5b87  release/cgminer-dr1-ubuntu64.zip
-eaafaba6b48efad03307cd357b23bb1d6d3581db  release/cgminer-dr1-win.zip
+2669d2eb9251ed5c3bb8227e1e59c68834a10092  ./cgminer-dr1-pi.zip
+b678f2c01ce35a387288bdec4b128cd1d833c5ab  ./cgminer-dr1-ubuntu32.zip
+b72e7a107790fbd6458fa3af7a667bbaa23d5b87  ./cgminer-dr1-ubuntu64.zip
+eaafaba6b48efad03307cd357b23bb1d6d3581db  ./cgminer-dr1-win.zip
 ```
