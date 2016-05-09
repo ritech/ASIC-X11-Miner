@@ -2,7 +2,7 @@ DR1 miner parameters description:
 
 --dr1-cutoff-temp  Set DR1 overheat cut off temperature (default: 45)  
 --dr1-cutoff-fan   Set DR1 too slow cut off fanspeed (default: 0)
---dr1-fan          Set fanspeed percentage for DR1, single value or range (default: LV5 )(LV1/LV2/LV3/LV4/LV5)
+--dr1-fan          Set fanspeed percentage for DR1, single value or range (default: LV3 )(LV1/LV2/LV3)
 --dr1-clk          Set frequency for DR1, (default: 200) 200/250/300/400
 --dr1-asic-x       Set asic x num (default:10) 
 --dr1-asic-y       Set asic y num (default:6)
