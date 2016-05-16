@@ -10,14 +10,14 @@ See the install [docs](https://github.com/PinIdea/ASIC-X11-Miner/) for more inst
 
 ```console
 $ cgminer.exe --x11 -o "stratum+tcp://url:port" -u xxxx -p x \
---dr1-clk 400 --dr1-fan LV5 -S //./COM5
+--dr1-clk 400 --dr1-fan LV3 -S //./COM5
 ```
 
 ### Linux (Ubuntu) Usage
 
 ```console
 $ cgminer --x11 -o "stratum+tcp://url:port" -u xxx -p x \
---dr1-clk 400 --dr1-fan LV5 -S /dev/ttyUSB0
+--dr1-clk 400 --dr1-fan LV3 -S /dev/ttyUSB0
 ```
 
 ### Raspberry Pi Usage
@@ -35,7 +35,7 @@ Usage:
 ```console
 $ cgminer --x11 -o "stratum+tcp://url:port" \
                 -u xxx -p x --dr1-clk 400 \
-                --dr1-fan LV5 -S /dev/ttyUSB0
+                --dr1-fan LV3 -S /dev/ttyUSB0
 ```
 
 ### Parameters for cgminer added by PinIdea
@@ -44,7 +44,6 @@ $ cgminer --x11 -o "stratum+tcp://url:port" \
 | ------------------------- | ----------------------------------------------------- |
 | ``--dr1-cutoff-temp``     | Set DR1 overheat cut off temperature (default: 45)    |
 | ``--dr1-cutoff-fan``      | Set DR1 too slow cut off fanspeed (default: 0)        |
-| ``--dr1-fan``             | Set fanspeed percentage for DR1, single value or range (default: LV5 )(LV1/LV2/LV3/LV4/LV5)|
 | ``--dr1-clk``             | Set frequency for DR1, (default: 200) 200/250/300/400 |
 | ``--dr1-asic-x``          | Set asic x num (default:10)                           |
 | ``--dr1-asic-y``          | Set asic y num (default:6)                            |

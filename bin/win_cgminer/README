@@ -9,7 +9,6 @@ DR1 miner parameters description:
 --dr1-check-testnonce Set DR1 check nonce before submit to server
 --dr1-scan-serial|-S  [# Direct serial I/O, manual port specification (Linux)--dr1-scan-serial /dev/ttyUSB0 --dr1-scan-serial /dev/ttyUSB1 (Windows) --dr1-scan-serial //./COM5]
                       [# Direct serial I/O, auto-detect ports (Linux only)--dr1-scan-serial dr1:auto]
---dr1-asic-status   Set DR1 status refresh interval (default: 300 Seconds)
 
 Windows usage:
-cgminer --x11 -o "stratum+tcp://url:port" -u xxxx -p x --dr1-clk 400 --dr1-fan LV5 -S //./COM5
+cgminer --x11 -o "stratum+tcp://url:port" -u xxxx -p x --dr1-clk 400 --dr1-fan LV3 -S //./COM5

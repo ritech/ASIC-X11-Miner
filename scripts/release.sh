@@ -2,8 +2,8 @@
 
 set -e
 
-GITHUB_TOKEN=""
-VERSION=1.0.4 # Manually change the version when new binaries are available
+
+VERSION=1.0.5 # Manually change the version when new binaries are available
 GITHUB_USER=PinIdea
 GITHUB_REPO=ASIC-X11-Miner
 PROJECT_URL="git@github.com:${GITHUB_USER}/${GITHUB_REPO}"
