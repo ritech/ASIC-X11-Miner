@@ -74,7 +74,7 @@ cp -f $(git rev-parse --show-toplevel)/scripts/templates/github-release-template
 checkError "Can't find github release template"
 
 CHECKSUM=""
-for file in $(ls ${RELEASE_DIR}); do
+for file in $(ls ${RELEASE_DIR}/*.zip); do
   SHA256=$(openssl dgst -sha256 < "${file}")
   MD5=$(openssl dgst -md5 < "${file}")
   LINE=$(printf "\n * **%s**\n  * sha256 \`%s\`\n  * md5 \`%s\`\n\n" "$(basename ${file})" "${SHA256}" "${MD5}")
@@ -108,7 +108,7 @@ github-release release \
 checkError "Could not create release, aborting"
 
 display "Uploading binaries"
-for file in $(ls ${RELEASE_DIR}); do
+for file in $(ls ${RELEASE_DIR}/*.zip); do
   display "Uploading ${file}..."
   github-release upload \
       --security-token  "${GITHUB_TOKEN}" \
