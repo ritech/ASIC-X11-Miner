@@ -94,7 +94,7 @@ RELEASE_DOCUMENTATION="$(cat ${GITHUB_RELEASE_FILE})"
 
 display "Tagging release on github"
 git tag "${GITHUB_VERSION}"
-git push
+git push --tags
 
 display "Creating release on github"
 github-release release \
