@@ -3,11 +3,11 @@
 set -e
 
 
-VERSION=1.0.5 # Manually change the version when new binaries are available
+VERSION=1.0.6 # Manually change the version when new binaries are available
 GITHUB_USER=PinIdea
 GITHUB_REPO=ASIC-X11-Miner
 PROJECT_URL="git@github.com:${GITHUB_USER}/${GITHUB_REPO}"
-GITHUB_RELEASE_NAME="PinIdea ASIC X11 Miner DR-1 v$VERSION"
+GITHUB_RELEASE_NAME="PinIdea ASIC X11 Miner DR-1/DU-1 v$VERSION"
 
 function display {
   echo "⛏  $1"
@@ -93,8 +93,8 @@ checkError "Couldn't replace [ ${CHECKSUM} ]"
 RELEASE_DOCUMENTATION="$(cat ${GITHUB_RELEASE_FILE})"
 
 display "Tagging release on github"
-git tag "${GITHUB_VERSION}"
-git push --tags
+# git tag "${GITHUB_VERSION}"
+# git push --tags
 
 display "Creating release on github"
 github-release release \
