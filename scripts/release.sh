@@ -3,7 +3,7 @@
 set -e
 
 
-VERSION=1.0.6 # Manually change the version when new binaries are available
+VERSION=1.0.7 # Manually change the version when new binaries are available
 GITHUB_USER=PinIdea
 GITHUB_REPO=ASIC-X11-Miner
 PROJECT_URL="git@github.com:${GITHUB_USER}/${GITHUB_REPO}"
@@ -93,8 +93,8 @@ checkError "Couldn't replace [ ${CHECKSUM} ]"
 RELEASE_DOCUMENTATION="$(cat ${GITHUB_RELEASE_FILE})"
 
 display "Tagging release on github"
-# git tag "${GITHUB_VERSION}"
-# git push --tags
+git tag "${GITHUB_VERSION}"
+git push --tags
 
 display "Creating release on github"
 github-release release \

@@ -13,11 +13,26 @@ $ cgminer.exe --x11 -o "stratum+tcp://url:port" -u xxxx -p x \
 --dr1-clk 400 --dr1-fan LV3 -S //./COM5
 ```
 
+USB miner usage:
+```console
+$ cgminer.exe --x11 -o "stratum+tcp://url:port" -u xxxx -p x --dr1-clk 200 --dr1-fan LV3  -S //./COM352 --du1
+```
+
 ### Linux (Ubuntu) Usage
+curl curses dev library 
+
+```console
+$ sudo apt-get install -y libcurl4-openssl-dev libncurses5-dev
+
+```
 
 ```console
 $ cgminer --x11 -o "stratum+tcp://url:port" -u xxx -p x \
 --dr1-clk 400 --dr1-fan LV3 -S /dev/ttyUSB0
+```
+USB Usage:
+```console
+$ ./cgminer --x11 -o "stratum+tcp://url:port" -u xxx -p x --dr1-clk 400 --dr1-fan LV3 -S /dev/ttyUSB0 --du1 
 ```
 
 ### Raspberry Pi Usage
@@ -38,6 +53,11 @@ $ cgminer --x11 -o "stratum+tcp://url:port" \
                 --dr1-fan LV3 -S /dev/ttyUSB0
 ```
 
+USB Usage:
+```console
+$ ./cgminer --x11 -o "stratum+tcp://url:port" -u xxx -p x --dr1-clk 400 --dr1-fan LV3 -S /dev/ttyUSB0 --du1 
+```
+
 ### Parameters for cgminer added by PinIdea
 
 | Parameter                 | Description                                           |
@@ -51,7 +71,7 @@ $ cgminer --x11 -o "stratum+tcp://url:port" \
 | ``--dr1-scan-serial|-S``  | 1. Direct serial I/O, manual port specification <br/>(Linux) <br/>``--dr1-scan-serial /dev/ttyUSB0 --dr1-scan-serial /dev/ttyUSB1`` <br/>(Windows) <br/> ``--dr1-scan-serial //./COM5`` <br/>2. Direct serial I/O, auto-detect ports <br/>(Linux only)<br/> ``--dr1-scan-serial dr1:auto`` |
 | ``--dr1-asic-status``     | Set DR1 status refresh interval (default: 300 Seconds)|
 | ``--dr1-fan``             | Set fanspeed percentage for DR1, single value or range (default: LV3 )(LV1/LV2/LV3) |
-
+|``--du1``           |Just for miniusb mining,if set minidr will auto ignore --dr1-asic-x --dr1-asic-y --dr1-cutoff-temp --drl-cutoff-fan|
 
 ## Changelog
 
