@@ -2,6 +2,9 @@
 
 set -e
 
+SRC_ROOT="$(git rev-parse --show-toplevel)"
+
+source $SRC_ROOT/.env
 
 VERSION=1.0.7 # Manually change the version when new binaries are available
 GITHUB_USER=PinIdea
