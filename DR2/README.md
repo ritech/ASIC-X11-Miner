@@ -1,26 +1,25 @@
 ### Manual
 
-DR2 mining machine using web interface to config and manager, which is simpler and much friendly compare to the CLI.
+DR-2 mining device can be configured and managed via web user interface instead of CLI which make it easier and simpler for users who is not a big fan of commands in terminals. 
 
-By following these steps, you can easily complete DR2 setup work:
+By following the steps below, DR-2 can be easily setup to work.
 
-DR2'IP is factory set static IP, which is 192.168.1.200.
+Note: For each machine, the default private IP address is set to be ``192.169.1.200``.
 
-If the router in your network segment is set as 192.168.1.1, you can plug the miner to the router directly. 
-Then use web browser to open http://192.168.1.200 (chrome chrome suggested).
-The web interface password is admin (lowercase).
+* If your router in your network is set within the range of ``192.168.1.*`` e.g. ``192.168.1.1``, simply plug in the miner, and connect ethernet cable with your router directly would enable it.
 
-If your router within the network is set as 192.168.1.1. You have two option here:
+  * Visit ``http://192.168.1.200`` with a modern web browser from a computer connected to the same network (Google Chrome Recommended) and use the default password ``admin`` to login. The password ``admin`` is all lowercased. 
 
-1. Reconfig the route to 192.168.1.1
-2. Config your computer's wired network card to  192.168.1.5 subnet mask 255.255.255.0, leave the gateway ip blank. 
-Then you can plug the miner to your computer directly. 
+* If your router isn't within the network as ``192.168.1.1``,  there are two options to make it work:
 
-Once you entered the web interface of DR2, you can click "Network Configure", and modify the ip address 
-of the Miner to what ever you want. 
-PLEASE BE VERY CAREFUL HERE. Any misconfig may result in makeing you miner unacccessable.
+  * 1. Reconfig your route to be ``192.168.1.1``
+  * 2. Reconfig your DR-2's IP
+    * Change your computer's private IP address to be ``192.168.1.5``,  subnet mask ``255.255.255.0``, leave the gateway ip blank. Then connect the miner to your computer directly via a Ethernet cable. 
+    * Visit ``http://192.169.1.200`` since you're in the same network now. Once you are able to get access to the web interface of DR-2, simply click on ``Network Configure``, and modify the IP address of the Miner to whatever you want. 
 
-In the "Pool Configure" of web interface, you can configure the username and password mining and mineral pools Address
-Mine pool address format ip: port (for example minepool.in:7903), click apply, your miner will begin to mine automatically in 10 seconds.
+*PLEASE BE VERY CAREFUL HERE*. Any misconfig may result in making you miner unacccessable.
+
+* In the ``Pool Configure`` view, you can set up the username and password for mining and mineral pools address.
+Mining pool address format shoule be ``ip: port`` (e.g ``minepool.in:7903``). Click ``apply``, your miner will start to mine automatically in 10 seconds.
 
 In the "asic status", you can view the working status of the chip.
