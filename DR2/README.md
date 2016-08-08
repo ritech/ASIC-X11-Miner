@@ -19,7 +19,6 @@ Note: For each machine, the default private IP address is set to be ``192.169.1.
 
 *PLEASE BE VERY CAREFUL HERE*. Any misconfig may result in making you miner unacccessable.
 
-* In the ``Pool Configure`` view, you can set up the username and password for mining and mineral pools address.
-Mining pool address format shoule be ``ip: port`` (e.g ``minepool.in:7903``). Click ``apply``, your miner will start to mine automatically in 10 seconds.
-
-In the "asic status", you can view the working status of the chip.
+* In ``Pool Configure`` section, you can set up the username and password for mining and mineral pools address.
+Mining pool address format shoule be ``ip: port`` (e.g ``minepool.in:7903``). Click ``apply``, your miner will start mining automatically in 10 seconds.
+* In ``asic status`` section, the working status for the chips will be displayed.
