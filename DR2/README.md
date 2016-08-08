@@ -12,9 +12,9 @@ Note: For each machine, the default private IP address is set to be ``192.169.1.
 
 * If your router isn't within the network as ``192.168.1.1``, there are two options to make it work:
 
-  * 1. Reconfigure your route to be ``192.168.1.1``
-  * 2. Reconfigure your DR-2's IP
-    * Change your computer's private IP address to be ``192.168.1.5``,  subnet mask ``255.255.255.0``, leave the gateway IP blank. Then connect the miner to your computer directly via an Ethernet cable. 
+  * 1. Reconfigure your router to be ``192.168.1.1``
+  * 2. Reconfigure your DR-2's IP address
+    * Change your computer's private IP address to be ``192.168.1.5``, subnet mask ``255.255.255.0``, leave the gateway IP blank. Then connect the miner to your computer directly via an Ethernet cable. 
     * Visit ``http://192.169.1.200`` since you're on the same network now. Once you are able to get access to the web interface of DR-2, simply click on ``Network Configure``, and modify the IP address of the Miner to whatever you want. 
 
 *PLEASE BE VERY CAREFUL HERE*. Any misconfigure may result in making your miner inaccessible.
